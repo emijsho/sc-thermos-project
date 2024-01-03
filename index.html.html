@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thermos Cup</title>
+  </head>
+  <style>
+    .finalProject {
+      background-color: #ffffff;
+      border-radius: 10px;
+      color: #4d5e4c;
+      width: 50%;
+      padding: 30px;
+      margin: 30px auto;
+      font-family: tahoma;
+      cursor: crosshair;}
+    h1 {
+      color: #4d5e4c;
+      font-size: 36px;
+      text-align: center;
+      font-family: tahoma;
+    }
+    h2 {
+      color: #4d5e4c;
+      font-size: 18px;
+      text-align: center;
+      font-weight: normal;
+    }
+   
+    ul {
+      padding: 0;
+      text-align: left;
+      font-size: 16px;
+    }
+    li {
+      display: block;
+      text-align: left;
+      margin: 0px auto;
+      padding: 4px 0px;
+      max-width: 900px;
+    }
+    img:hover {
+      content: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/832/original/91ckNt3mMPL._AC_SL1500_.jpg?1690915334");
+    }
+    .tested{font-size: 12px;
+
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      border: 1px;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: #4d5e4c;
+      border-radius: 20px;
+      background-color: ede7cf;
+      border-color: #4d5e4c;
+      filter: drop-shadow(2px 6px 4px #4d5e4c);
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      background-color: #4d5e4c;
+      color: #fffdff;
+      cursor: pointer;
+    }
+    body {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      background-image: linear-gradient(
+        180deg,
+        #acc6aa88 10%,
+        #4d5e4c 40%,
+        #2e392e 100%
+      );
+      box-shadow: none;
+    }
+    p {
+      color: #4d5e4c;
+      font-family: tahoma;
+    }
+    a:link {
+  color: #4d5e4c;
+  background-color: #ddbc89;
+  color: #fffdff;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #4d5e4c;
+}
+a:active {
+  color: #4d5e4c;
+}
+  </style>
+  <body>
+    <div class="finalProject">
+      <h1>Arguably the Best Thermos Cup.</h1>
+      <h2><em>possibly ever, in my humble opinion.</em></h2>
+      <hr />
+      <p><strong>Benefits include:</strong></p>
+      <ul>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/828/original/61M867Yf2BL._AC_SL1500_.jpg?1690914614"
+          alt="default"
+          width="420" align ="left"
+        />
+        <li>🍵 Keeps hot drinks piping hot for at least 4 hours.</li>
+        <li>🍵 Probably keeps cold drinks cold but I'm not into them.</li>
+        <li>
+          🍵 Not too big so totally fits in car cup holders, and large inside
+          denim jacket pockets*.
+        </li>
+        <li>🍵 Comfortable to hold on those outside winter walks.</li>
+        <li>
+          🍵 Save tea bags & lower caffeine intake without compromising a decent
+          cuppa.
+        </li>
+        <li>🍵 No jitters, just a happy tummy.</li>
+        <li>🍵 No leaking... yet.</li>
+        <li>🍵 Comes in a variety of colours too cos, style innit.</li>
+       <span class="tested">*tested, you're welcome.</span> 
+      </ul>
+
+      <br />
+      <br /><br />
+      <br />
+        <button onclick="displayText()">
+      Click to purchase your own Thermos here.
+    </button><br>
+
+    <div id="textField" style="display: none">
+      <a
+        href="https://www.amazon.co.uk/Travel-380ml-Insulated-Coffee-Leakproof/dp/B09H42NKRN?pd_rd_w=qnrS2&content-id=amzn1.sym.e4f17dd8-9383-42c6-acc3-c75af35f1776&pf_rd_p=e4f17dd8-9383-42c6-acc3-c75af35f1776&pf_rd_r=13MFCH17X9WYRNSWXW8Y&pd_rd_wg=JHrVk&pd_rd_r=1f35ca30-597f-4e40-9a0b-ca58f15c1fb8&pd_rd_i=B09H42NKRN&psc=1&ref_=pd_bap_d_grid_rp_0_1_t"
+      >
+        Purchase your own mug from Amazon here.</a
+      >
+    </div>
+  <span class="tested">Coded by Emily Short</span>
+
+      <script>
+      function displayText() {
+        var text = document.getElementById("textField");
+        text.style.display = "block";
+      }
+      function contactUs() {
+        let intro = prompt("Are you looking for a new drinks container?");
+        if (intro === "yes") {
+          alert("Look no longer!");
+        } else if (intro === "no") {
+          alert("Okay, but hear me out!");
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
